@@ -19,7 +19,7 @@ const footerLinks = [
     },
 ];
 
-const SocialIcon = ({ children }) => (
+const SocialIcon = ({ children }: { children: React.ReactNode }) => (
     <a
         href="#"
         className="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white hover:bg-[#FFCF36] hover:text-white transition-all duration-200 hover:-translate-y-0.5"

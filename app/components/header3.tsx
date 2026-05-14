@@ -9,7 +9,7 @@ const services = [
     { id: "06", title: "Roof Fitting", desc: "Trust Skilled Roofers For Expert Installation With Premium Materials Ensuring The Longest-Lasting Protection Property." },
 ];
 
-function ServiceCard({ id, title, desc }) {
+function ServiceCard({ id, title, desc }: { id: string; title: string; desc: string }) {
     return (
         <div className="bg-gray-100 rounded-2xl p-6 flex flex-col gap-4">
             <span className="inline-flex items-center justify-center bg-yellow-400 text-black text-xs font-bold rounded-full px-3 py-1 w-fit">

@@ -25,9 +25,9 @@ const faqs = [
 ];
 
 export default function Askques() {
-    const [open, setOpen] = useState(null);
+    const [open, setOpen] = useState<number | null>(null);
 
-    const toggle = (i) => setOpen(open === i ? null : i);
+    const toggle = (i: number) => setOpen(open === i ? null : i);
 
     return (
         <section className="min-h-screen bg-white flex items-center justify-center font-sans px-4 md:px-8 py-12 md:py-20">
