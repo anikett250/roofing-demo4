@@ -12,13 +12,23 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Header />
-      <Header2 />
-      <Header3 />
-      <Header4 />
+      <section id="home">
+        <Header />
+      </section>
+      <section id="about">
+        <Header2 />
+      </section>
+      <section id="services">
+        <Header3 />
+      </section>
+      <section id="projects">
+        <Header4 />
+      </section>
+      <section id="contact">
+        <Quote />
+      </section>
       <Header5 />
       <Askques />
-      <Quote />
       <Footer />
     </>
   );

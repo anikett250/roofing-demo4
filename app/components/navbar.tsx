@@ -15,21 +15,51 @@ export default function Navbar() {
 
                 {/* Links */}
                 <div className="hidden md:flex items-center gap-4 lg:gap-10 text-lg md:text-[27px] text-black">
-                    <a href="#" className="hover:text-[#ffecae] transition-colors">
+                    <button className="hover:text-[#ffecae] transition-colors"
+                        onClick={() => {
+                            document.getElementById("home")?.scrollIntoView({
+                                behavior: "smooth",
+                            });
+                        }}
+                    >
                         Home
-                    </a>
-                    <a href="#" className="hover:text-[#ffecae] transition-colors">
+                    </button>
+                    <button className="hover:text-[#ffecae] transition-colors"
+                        onClick={() => {
+                            document.getElementById("about")?.scrollIntoView({
+                                behavior: "smooth",
+                            });
+                        }}
+                    >
                         About Us
-                    </a>
-                    <a href="#" className="hover:text-[#ffecae] transition-colors">
+                    </button>
+                    <button className="hover:text-[#ffecae] transition-colors"
+                        onClick={() => {
+                            document.getElementById("services")?.scrollIntoView({
+                                behavior: "smooth",
+                            });
+                        }}
+                    >
                         Services
-                    </a>
-                    <a href="#" className="hover:text-[#ffecae] transition-colors">
+                    </button>
+                    <button className="hover:text-[#ffecae] transition-colors"
+                        onClick={() => {
+                            document.getElementById("projects")?.scrollIntoView({
+                                behavior: "smooth",
+                            });
+                        }}
+                    >
                         Projects
-                    </a>
-                    <a href="#" className="hover:text-[#ffecae] transition-colors">
+                    </button>
+                    <button className="hover:text-[#ffecae] transition-colors"
+                        onClick={() => {
+                            document.getElementById("contact")?.scrollIntoView({
+                                behavior: "smooth",
+                            });
+                        }}
+                    >
                         Pricing
-                    </a>
+                    </button>
                 </div>
 
                 {/* Mobile Menu Button */}
